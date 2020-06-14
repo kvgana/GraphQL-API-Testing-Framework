@@ -37,8 +37,8 @@ The below libraries can be installed using ***pip*** or from ***Project Interpre
 
 ## Architecture
 ### Why Python?
-After looking over the Javascript, Apollo test client and Python languages suitability to build a test framework for GrapghQl,
-Python has advantages as list below - 
+After looking at Javascript, Apollo_test_client and Python,
+Python has advantages as listed 
 
 1. Suitability to extend to DB validation tests and even UI tests
 2. Large open source community
