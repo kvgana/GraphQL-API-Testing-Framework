@@ -17,17 +17,17 @@ testcaseSuite
 
 ## Libraries to install
 The below libraries can be installed using ***pip*** or from ***Project Interpreter***
-- 'pytest' - Testing framework. Can be used for enhancing tests for DB validation and UI tests
-- 'requests' - To make Graphql API calls over HTTP - 
-- 'json' and 'jsonschema' - To perform json and json files related operations
-- 'gql_query_builder' - To build Query, Mutation with ease
-- 'assertpy' - Assertion library
+- ***pytest*** - Testing framework. Can be used for enhancing tests for DB validation and UI tests
+- ***requests*** - To make Graphql API calls over HTTP - 
+- ***json and jsonschema*** - To perform json and json files related operations
+- ***gql_query_builder*** - To build Query, Mutation with ease
+- ***assertpy*** - Assertion library
 
 ## Running the tests
-Download the repo from Github
-Open the 'pelago' folder
-Move to 'tests' folder
-To directly run the file - Run 'test_sanity.py'
+1. Download the repo from Github
+2. Open the 'Pelago' folder
+3. Move to 'tests' folder
+4. To directly run the file - Run 'test_sanity.py'
 
 ### To run from command line - 
 1. Run all the tests under tests folder `pytest`
