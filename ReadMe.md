@@ -32,7 +32,7 @@ The below libraries can be installed using ***pip*** or from ***Project Interpre
 ### To run from command line - 
 1. Run all the tests under tests folder `pytest`
 2. Run the tests and prints to console  `pytest -s` 
-3. Run tests parallely with mentioned threads_count `pytest -n <threads_count>`
+3. Run tests ***parallely*** with mentioned threads_count `pytest -n <threads_count>`
 
 
 ## Architecture
