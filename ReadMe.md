@@ -3,13 +3,11 @@
 ## Description
 This mini project is a Python based Testing framework for GraphQL API over HTTP using Pytest, Gql_query_builder and Assertpy. Contains a few automated tests and a list of other testcases(tescase.suite)
 
-## Getting Started
-The below setup instructions are in reference to Mac OS.(and Equivalent commands for Linux)
-
 ## Pre-requisites
-Python3 (version: 3.7.7)
-pytest(version >5.0)
-pip -  Python Package Manager ```python get-pip.py```
+- Python3 (version: 3.7.7)
+- pytest (version >5.0)
+- pip -  Python Package Manager(Install using ```python get-pip.py```)
+- Preferred IDE - Pycharm
 
 ## Folders
 ### Automated tests
@@ -18,22 +16,24 @@ pip -  Python Package Manager ```python get-pip.py```
 testcaseSuite
 
 ## Libraries to install
-The below libraries can be installed using pip(pip install <name>) or from 'Project Interpreter'
-'pytest' - Testing framework. Can be used for enhancing tests for DB validation and UI tests
-'requests' - To make Graphql API calls over HTTP - 
-'json' and 'jsonschema' - To perform json and json files related operations
-'gql_query_builder' - To build Query, Mutation with ease
-'assertpy' - Assertion library
+The below libraries can be installed using ***pip*** or from ***Project Interpreter***
+- 'pytest' - Testing framework. Can be used for enhancing tests for DB validation and UI tests
+- 'requests' - To make Graphql API calls over HTTP - 
+- 'json' and 'jsonschema' - To perform json and json files related operations
+- 'gql_query_builder' - To build Query, Mutation with ease
+- 'assertpy' - Assertion library
 
 ## Running the tests
 Download the repo from Github
 Open the 'pelago' folder
 Move to 'tests' folder
 To directly run the file - Run 'test_sanity.py'
-To run from command line - 
-  **pytest**                    -> Runs all the tests under tests folder
-  **pytest -s**                 -> Runs the tests and prints to console 
-  **pytest -n <threads_count>** -> Runs tests parallely with mentioned threads_count
+
+### To run from command line - 
+1. Run all the tests under tests folder `pytest`
+2. Run the tests and prints to console  `pytest -s` 
+3. Run tests parallely with mentioned threads_count `pytest -n <threads_count>`
+
 
 ## Architecture
 ### Why Python?
