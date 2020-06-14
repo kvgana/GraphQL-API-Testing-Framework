@@ -1,0 +1,180 @@
+QUERIES
+
+Query product with valid productID = pgfnl
+{
+ 	product(productId: "pgfnl"){
+    productId
+    productName
+    productUri
+    status
+    latitude
+    longitude
+    placeId
+    address
+    collectPhysicalTicket
+    confirmationType
+    cancellationType
+    cancellationCutoff
+    mediaLinks
+    dateCreated
+    dateModified
+  }
+}
+
+
+Query product with invalid productID = eu1y2, to expect error
+{
+	allProducts(productId:"eu1y2"){
+    productId
+    productName
+  }
+}
+
+Query product with valid productID = pgfnl to expect only a few fields-
+{
+	allProducts(productId:"pgfnl"){
+    productId
+    productName
+  }
+}
+
+Query to fetch all products with pagination=3
+{
+ 	allProducts(page:3){
+    productId
+    productName
+  }
+}
+
+Query to search a product with regex matching
+{
+ 	searchProducts(q:"Gardens"){
+    productId
+    productName
+  }
+}
+
+Query to search a youMayLikeProducts
+{
+	youMayLikeProducts(productId:"pgfnl"){
+    productId
+    productName
+    productUri
+    status
+    latitude
+  }
+}
+
+Query to search a null product
+{
+	product(productId:""){
+    productId
+    productName
+  }
+}
+
+Query to search for product without passing productID. Expected to retun syntax error
+{
+	product(){
+    productId
+    productName
+  }
+}
+
+Query to search for product with unsupported search field 'id'
+{
+ 	product(id: "pgfnl"){
+    productId
+    productName
+  }
+}
+
+Query to search for product with unsupported search field 'id'
+{
+ 	product(productName: "pgfnl"){
+    productId
+    productName
+  }
+}
+
+
+Query to search for product with invalid search field 'productName'
+{
+
+  	product(productName: "Gardens by the bay flower dome"){
+    productId
+    productName
+ }
+}
+
+
+MUTATIONS
+Valid signup
+mutation {
+   signup(email: "anytest@gmail.com" firstName: "any" lastName: "test"  password: "testy"){
+    accessToken
+  }
+
+Signup with invalid email
+mutation {
+   signup(email: "anytest@gmail.1" firstName: "any" lastName: "test"){
+    accessToken
+  }
+
+Signup with no email
+mutation {
+   signup(email: "" firstName: "any" lastName: "test"  password: "testy"){
+    accessToken
+  }
+
+Signup with no password
+mutation {
+   signup(email: "anytest@gmail.com" firstName: "any" lastName: "test"  password: ""){
+    accessToken
+  }
+
+Signup with missing field details
+mutation {
+   signup(email: "anytest@gmail.com" firstName: "any" lastName: "test"){
+    accessToken
+  }
+
+Login with valid credentails
+mutation {
+   login(email: "anytest@gmail.com" password: "testy"){
+    accessToken
+  }
+}
+
+Login with invalid credentials
+mutation {
+   login(email: "ytest@gmail.com",  password: "hope"){
+    accessToken
+  }
+}
+
+Signup with  firstName with special characters, numbers, spaces
+mutation {
+   signup(email: "anytest@gmail.1" firstName: "12#4" lastName: "test"){
+    accessToken
+  }
+
+Similar other combinations below -
+
+Signup and successful login
+
+Signup and invalid credentials
+
+Signup with duplicate email
+
+Login with empty email
+
+Login with empty password
+
+Signup with no firstName
+
+Signup with no lastName
+
+Signup with lastName with special characters, numbers, spaces
+
+

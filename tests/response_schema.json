@@ -1,0 +1,550 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "product": {
+          "type": "object",
+          "properties": {
+            "productId": {
+              "type": "string"
+            },
+            "productName": {
+              "type": "string"
+            },
+            "mediaLinks": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "cancellationType": {
+              "type": "string"
+            },
+            "cancellationCutoff": {
+              "type": "integer"
+            },
+            "minGroupSize": {
+              "type": "integer"
+            },
+            "duration": {
+              "type": "integer"
+            },
+            "destinationId": {
+              "type": "integer"
+            },
+            "openDateTicket": {
+              "type": "boolean"
+            },
+            "collectPhysicalTicket": {
+              "type": "boolean"
+            },
+            "confirmationType": {
+              "type": "string"
+            },
+            "voucherType": {
+              "type": "string"
+            },
+            "guideLanguage": {
+              "type": "array",
+              "items": {}
+            },
+            "priceRangeFrom": {
+              "type": "number"
+            },
+            "priceRangeTo": {
+              "type": "number"
+            },
+            "priceAdultFrom": {
+              "type": "number"
+            },
+            "priceChildFrom": {
+              "type": "number"
+            },
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "address": {
+              "type": "string"
+            },
+            "content": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string"
+                },
+                "shortDescription": {
+                  "type": "string"
+                },
+                "pickupInformation": {
+                  "type": "string"
+                },
+                "highlights": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "allSection": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "sections": {
+                      "type": "object",
+                      "properties": {
+                        "section1": {
+                          "type": "object",
+                          "properties": {
+                            "listType": {
+                              "type": "string"
+                            },
+                            "listItems": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "listType",
+                            "listItems"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "section1"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "allSection",
+                    "sections"
+                  ]
+                },
+                "features": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "allSection": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "sections": {
+                      "type": "object",
+                      "properties": {
+                        "included": {
+                          "type": "object",
+                          "properties": {
+                            "heading": {
+                              "type": "string"
+                            },
+                            "listType": {
+                              "type": "string"
+                            },
+                            "listItems": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "heading",
+                            "listType",
+                            "listItems"
+                          ]
+                        },
+                        "excluded": {
+                          "type": "object",
+                          "properties": {
+                            "heading": {
+                              "type": "string"
+                            },
+                            "listType": {
+                              "type": "string"
+                            },
+                            "listItems": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "heading",
+                            "listType",
+                            "listItems"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "included",
+                        "excluded"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "allSection",
+                    "sections"
+                  ]
+                },
+                "whatToExpect": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "allSection": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "sections": {
+                      "type": "object",
+                      "properties": {
+                        "section1": {
+                          "type": "object",
+                          "properties": {
+                            "heading": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "heading",
+                            "text"
+                          ]
+                        },
+                        "section2": {
+                          "type": "object",
+                          "properties": {
+                            "listType": {
+                              "type": "string"
+                            },
+                            "heading": {
+                              "type": "string"
+                            },
+                            "listItems": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "listType",
+                            "heading",
+                            "listItems"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "section1",
+                        "section2"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "allSection",
+                    "sections"
+                  ]
+                },
+                "additionalInfo": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "allSection": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "sections": {
+                      "type": "object",
+                      "properties": {
+                        "testsection": {
+                          "type": "object",
+                          "properties": {
+                            "heading": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "heading",
+                            "text"
+                          ]
+                        },
+                        "section2": {
+                          "type": "object",
+                          "properties": {
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "text"
+                          ]
+                        },
+                        "section3": {
+                          "type": "object",
+                          "properties": {
+                            "listType": {
+                              "type": "string"
+                            },
+                            "heading": {
+                              "type": "string"
+                            },
+                            "listItems": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "listType",
+                            "heading",
+                            "listItems"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "testsection",
+                        "section2",
+                        "section3"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "allSection",
+                    "sections"
+                  ]
+                },
+                "termsAndConditions": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "allSection": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "sections": {
+                      "type": "object",
+                      "properties": {
+                        "section1": {
+                          "type": "object",
+                          "properties": {
+                            "heading": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "heading",
+                            "text"
+                          ]
+                        },
+                        "section2": {
+                          "type": "object",
+                          "properties": {
+                            "listType": {
+                              "type": "string"
+                            },
+                            "heading": {
+                              "type": "string"
+                            },
+                            "listItems": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "listType",
+                            "heading",
+                            "listItems"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "section1",
+                        "section2"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "allSection",
+                    "sections"
+                  ]
+                }
+              },
+              "required": [
+                "description",
+                "shortDescription",
+                "pickupInformation",
+                "highlights",
+                "features",
+                "whatToExpect",
+                "additionalInfo",
+                "termsAndConditions"
+              ]
+            }
+          },
+          "required": [
+            "productId",
+            "productName",
+            "mediaLinks",
+            "cancellationType",
+            "cancellationCutoff",
+            "minGroupSize",
+            "duration",
+            "destinationId",
+            "openDateTicket",
+            "collectPhysicalTicket",
+            "confirmationType",
+            "voucherType",
+            "guideLanguage",
+            "priceRangeFrom",
+            "priceRangeTo",
+            "priceAdultFrom",
+            "priceChildFrom",
+            "latitude",
+            "longitude",
+            "address",
+            "content"
+          ]
+        }
+      },
+      "required": [
+        "product"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}
