@@ -1,4 +1,4 @@
-# Pelago Challenge
+# GraphQL API Testing framework
 
 ## Description
 This mini project is a Python based Testing framework for GraphQL API over HTTP using Pytest, Gql_query_builder and Assertpy. Contains a few automated tests and a list of other testcases(tescase.suite)
